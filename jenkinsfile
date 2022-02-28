@@ -1,1 +1,8 @@
-
+pipeline{
+   agent any
+   stages{
+      stage(scm chekout"){
+           git url : 'https://github.com/jagadeesh-nani/my-app.git'
+      }
+   }
+}
